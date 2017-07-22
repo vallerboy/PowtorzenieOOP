@@ -17,19 +17,21 @@ public class Main {
         int choice;
         do{
             printMenu();
-            choice = scanner.nextInt();
+            choice = Integer.parseInt(scanner.nextLine());
             parseChoice(choice);
         }while (choice != 3);
 
     }
 
     private static void printMenu(){
+        System.out.println("-------------------------------------");
         System.out.println("Wpisz: ");
         System.out.println("1 - aby dodać nowe imię");
         System.out.println("2 - aby wyświetlić wszystkie imiona");
         System.out.println("3 - aby wyjść");
 
         System.out.print("Twój wybór: ");
+        System.out.println("-------------------------------------");
     }
 
     private static void parseChoice(int choice){
