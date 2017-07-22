@@ -60,8 +60,8 @@ public class Person implements Comparable<Person>{
     // zwracamy -1 gdy coś ma pójść wyżej niż coś
     @Override
     public int compareTo(Person o) {
-        if(age == o.getAge()){
-            return  0;
+        if(age == o.getAge() ){
+            return  name.compareTo(o.getName());
         }else if(age > o.getAge()){
             return 1;
         }
